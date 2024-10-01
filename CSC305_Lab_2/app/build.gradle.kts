@@ -15,6 +15,9 @@ repositories {
     mavenCentral()
 }
 
+val jsonVersion = "20240303"
+val jacksonVersion = "2.18.0"
+
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
@@ -23,6 +26,13 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+
+    // dependencies required by lab spec
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation("org.json:json:$jsonVersion")
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
