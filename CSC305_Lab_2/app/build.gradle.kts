@@ -26,9 +26,6 @@ dependencies {
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
-    // This dependency is used by the application.
-    implementation(libs.guava)
-
     // dependencies required by lab spec
     // https://mvnrepository.com/artifact/org.json/json
     implementation("org.json:json:$jsonVersion")
